@@ -156,9 +156,9 @@ tabla.exp <- data.frame(mes = as.character(pron.dias$month),
                         Maximo = as.integer(round(pron.dias$p_95*probs$prob_95)))
 
 total <- tabla.exp %>% 
-  dplyr::summarise(Minimo = max(Minimo),
-                   Promedio = max(Promedio),
-                   Maximo = max(Maximo)) %>% 
+  dplyr::summarise(Minimo = sum(Minimo),
+                   Promedio = sum(Promedio),
+                   Maximo = sum(Maximo)) %>% 
   dplyr::mutate(mes = "Total") %>% 
   dplyr::relocate(mes)
 
