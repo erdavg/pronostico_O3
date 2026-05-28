@@ -7795,7 +7795,63 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=4960cbbb-dd04-4697-a213-d0e61e92aebd">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=4960cbbb-dd04-4697-a213-d0e61e92aebd">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+Adjuntando el paquete: 'dplyr'
+
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Cargando paquete requerido: zoo
+
+
+Adjuntando el paquete: 'zoo'
+
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
+
+
+Adjuntando el paquete: 'lubridate'
+
+
+The following objects are masked from 'package:base':
+
+    date, intersect, setdiff, union
+
+
+corrplot 0.95 loaded
+
+
+Adjuntando el paquete: 'MASS'
+
+
+The following object is masked from 'package:dplyr':
+
+    select
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=b97dbe85-deab-4bf0-aaeb-6b632f73d3ef">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
@@ -11963,7 +12019,7 @@ UNgBAAB4if8H428I9Tq7TcoAAAAASUVORK5CYII=" width="420"/>
 
  ===== Residuals vs Leverage ===== 
 
- Hay puntos influyentes que estan jalando el modelo (153, 21, 68) 
+ Hay puntos influyentes que estan jalando el modelo (149, 17, 16) 
 </pre>
 </div>
 </div>
@@ -13602,8 +13658,24 @@ AAA4AokdAAAAAEcgsQMAAADgCCR2AAAAABzx/wReQMYozU4uAAAAAElFTkSuQmCC" width="420"/>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+===== Prueba de dispersión =====
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-1.1385540585188
+1.13855405851877
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+ El modelo poisson no tiene sobredispersion 
+
+ Buen modelo 
+</pre>
 </div>
 </div>
 </div>
@@ -13626,7 +13698,7 @@ AAA4AokdAAAAAEcgsQMAAADgCCR2AAAAABzx/wReQMYozU4uAAAAAElFTkSuQmCC" width="420"/>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-===== Summary =====
+===== Resumen del modelo =====
 </pre>
 </div>
 </div>
@@ -13705,7 +13777,7 @@ Number of Fisher Scoring iterations: 17
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-===== comparar vs modelo nulo =====
+===== Comparar vs modelo nulo =====
 </pre>
 </div>
 </div>
@@ -14992,7 +15064,7 @@ QZAZAgo7BEEQBEGQGcL/D4vt+bC1AUJRAAAAAElFTkSuQmCC" width="420"/>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Regresi%C3%B3n-Lineal-con-TMP-y-WSP">Regresión Lineal con TMP y WSP<a class="anchor-link" href="#Regresi%C3%B3n-Lineal-con-TMP-y-WSP">¶</a></h1>
+<h1 id="Regresi%C3%B3n-Lineal-con-TMP-y-WSP">Regresión Lineal con TMP y WSP<a class="anchor-link" href="#Regresi%C3%B3n-Lineal-con-TMP-y-WSP">¶</a></h1><h3 id="con-datos-desde-2012">con datos desde 2012<a class="anchor-link" href="#con-datos-desde-2012">¶</a></h3>
 </div>
 </div>
 </div>
@@ -15016,11 +15088,70 @@ QZAZAgo7BEEQBEGQGcL/D4vt+bC1AUJRAAAAAElFTkSuQmCC" width="420"/>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=4b6080be-e6d5-439d-ba12-69813c8005e1">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+ Datos para el modelo 
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<table class="dataframe">
+<caption>A data.frame: 6 × 13</caption>
+<thead>
+<tr><th></th><th scope="col">Year</th><th scope="col">month</th><th scope="col">oni</th><th scope="col">ndias</th><th scope="col">ndias_28</th><th scope="col">ndias_29</th><th scope="col">ndias_30</th><th scope="col">ndias_31</th><th scope="col">ndias_32</th><th scope="col">oni_cat</th><th scope="col">ndias_wsp_bajo</th><th scope="col">wsp</th><th scope="col">wsp_c</th></tr>
+<tr><th></th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">1</th><td>2012</td><td>febrero</td><td>-0.7</td><td>0</td><td> 0</td><td> 0</td><td> 0</td><td> 0</td><td>0</td><td>Nina   </td><td>1</td><td>2.021790</td><td>-0.15640917</td></tr>
+<tr><th scope="row">2</th><td>2012</td><td>marzo  </td><td>-0.6</td><td>2</td><td>10</td><td> 4</td><td> 0</td><td> 0</td><td>0</td><td>Nina   </td><td>0</td><td>2.111138</td><td>-0.06706154</td></tr>
+<tr><th scope="row">3</th><td>2012</td><td>abril  </td><td>-0.4</td><td>0</td><td>15</td><td> 8</td><td> 5</td><td> 4</td><td>2</td><td>Neutral</td><td>0</td><td>2.256602</td><td> 0.07840222</td></tr>
+<tr><th scope="row">4</th><td>2012</td><td>mayo   </td><td>-0.3</td><td>1</td><td>24</td><td>21</td><td>14</td><td>11</td><td>8</td><td>Neutral</td><td>0</td><td>2.288472</td><td> 0.11027314</td></tr>
+<tr><th scope="row">5</th><td>2012</td><td>junio  </td><td>-0.3</td><td>0</td><td>15</td><td>12</td><td> 7</td><td> 4</td><td>3</td><td>Neutral</td><td>2</td><td>2.060629</td><td>-0.11757000</td></tr>
+<tr><th scope="row">6</th><td>2013</td><td>febrero</td><td>-0.1</td><td>0</td><td> 4</td><td> 2</td><td> 1</td><td> 0</td><td>0</td><td>Neutral</td><td>0</td><td>2.129527</td><td>-0.04867265</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<table class="dataframe">
+<caption>A data.frame: 6 × 13</caption>
+<thead>
+<tr><th></th><th scope="col">Year</th><th scope="col">month</th><th scope="col">oni</th><th scope="col">ndias</th><th scope="col">ndias_28</th><th scope="col">ndias_29</th><th scope="col">ndias_30</th><th scope="col">ndias_31</th><th scope="col">ndias_32</th><th scope="col">oni_cat</th><th scope="col">ndias_wsp_bajo</th><th scope="col">wsp</th><th scope="col">wsp_c</th></tr>
+<tr><th></th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;chr&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;fct&gt;</th><th scope="col">&lt;int&gt;</th><th scope="col">&lt;dbl&gt;</th><th scope="col">&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">65</th><td>2024</td><td>junio  </td><td>-0.2</td><td>0</td><td>18</td><td>18</td><td>18</td><td>18</td><td>16</td><td>Neutral</td><td>3</td><td>2.154463</td><td>-0.02373603</td></tr>
+<tr><th scope="row">66</th><td>2025</td><td>febrero</td><td>-0.8</td><td>1</td><td> 3</td><td> 2</td><td> 1</td><td> 0</td><td> 0</td><td>Nina   </td><td>3</td><td>1.706058</td><td>-0.47214168</td></tr>
+<tr><th scope="row">67</th><td>2025</td><td>marzo  </td><td>-0.7</td><td>2</td><td>26</td><td>20</td><td>11</td><td> 2</td><td> 0</td><td>Nina   </td><td>0</td><td>2.041854</td><td>-0.13634579</td></tr>
+<tr><th scope="row">68</th><td>2025</td><td>abril  </td><td>-0.4</td><td>3</td><td>24</td><td>21</td><td>20</td><td>16</td><td> 2</td><td>Neutral</td><td>0</td><td>2.309937</td><td> 0.13173737</td></tr>
+<tr><th scope="row">69</th><td>2025</td><td>mayo   </td><td>-0.4</td><td>0</td><td>21</td><td>20</td><td>14</td><td>11</td><td> 5</td><td>Neutral</td><td>1</td><td>2.003516</td><td>-0.17468333</td></tr>
+<tr><th scope="row">70</th><td>2025</td><td>junio  </td><td>-1.2</td><td>0</td><td> 4</td><td> 2</td><td> 0</td><td> 0</td><td> 0</td><td>Nina   </td><td>9</td><td>1.769458</td><td>-0.40874126</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=a6717ad9-d556-4b05-9fad-3c8a70b2c7eb">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+ Comparacion  de modelos con temperaturas 
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <table class="dataframe">
