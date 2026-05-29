@@ -47,3 +47,13 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.csv
+*.xlsx
+*.RData
+*.rds
+__pycache__/
+.env
